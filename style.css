@@ -1,0 +1,586 @@
+body{
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    margin:0;
+    padding:0;
+    height:fit-content;
+    overflow-x:hidden;
+}
+
+header{
+    position: fixed;
+    top:0;
+    width: 100vw;
+    height: 110px;
+    background: #ffffff;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.title{
+    font-family:"IntroRust-Baseline";
+}
+
+header .navbar-container{
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s;
+    height: 110px;
+}
+
+/* header .logo-header {
+    float: left;
+    line-height: 0;
+    margin-left: 21px;
+} */
+
+.navbar-container svg{
+    transition: all 0.3s;
+    width: 245px;
+    height: 110px;
+}
+
+nav{
+    display: block;
+}
+
+.navbar-menu{
+    float: right;
+    margin-right: 21px;
+}
+
+.navbar-menu .menu-sub-wrap{
+    display: none;
+}
+
+.navbar-menu ul{
+    width: 100%;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.navbar-menu li{
+    position: relative;
+    float: left;
+    margin-left: 35px;
+}
+
+/* Fazer submenu aparecer */
+/* .navbar-menu li:hover ul, .navbar-menu li.over ul{
+    display: block;
+} */
+
+.navbar-menu li ul li{
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 150px;
+}
+
+.navbar-menu a{
+    display: block;
+    position: relative;
+    transition: all 0.3s;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    line-height: 80px;
+    color: #555555;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration:none;
+}
+
+.navbar-menu .cart-info{
+    position: relative;
+    margin-left: 13px !important;
+    margin-right: 6px !important;
+}
+
+.navbar-menu .sign-in a{
+    background:#555555;
+    line-height:2;
+    position:relative;
+    top:-20px;
+    height:117px;
+    width:135px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight:bold;
+}
+
+.navbar-menu .cart-info a{
+    line-height:43px;
+    height:100%;
+    padding-top:80%;
+}
+
+.navbar-menu .cart-item-count{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 20px;
+    text-align: center;
+    pointer-events: none;
+
+    font-family:"Montserrat";
+    font-size:20px;
+    color:#555555;
+}
+
+ul{
+    margin-left: 1.25rem;
+    line-height: 1.5;
+}
+
+li{
+    font-size: inherit;
+}
+
+main{
+    width:100vw;
+    height:fit-content;
+    box-sizing:border-box;
+    padding-top: 110px;
+}
+
+/*Flower background section*/
+
+.flowers-background{
+    width:100vw;
+    height:100vh;
+    background:url('https://cdn.shopify.com/s/files/1/1206/8182/t/7/assets/rexius_web_1920_1280_cacti.jpg?v=3712045909095809044');
+    background-size:100vw 140vh;
+    background-position-y:-150px;
+    background-repeat:no-repeat;
+}
+
+.container-parallax{
+    position: relative;
+}
+
+.parallax-mirror{
+    visibility: visible;
+    z-index: -100;
+    position: fixed;
+    top: 110px;
+    left: 0px;
+    overflow: hidden;
+    transform: translate3d(0px, 0px, 0px);
+    height: 947px;
+    width: 1508px;
+}
+
+.parallax-slider{
+    transform: translate3d(0px, 0px, 0px);
+    position: absolute;
+    top: -55px;
+    left: -203px;
+    height: 1002px;
+    width: 1503px;
+    max-width: none;
+}
+
+.shop-soils-button{
+    position:relative;
+    top:45%;
+    left:15%;
+
+    width:260px;
+    height:80px;
+    font-size:20px;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 50px;
+
+    font-weight:normal;
+
+    color:white;
+}
+
+input[type=text]{
+    width:320px;
+    height:35px;
+    padding:15px 10px;
+    margin-right:15px;
+    border:solid 1px #cacaca;
+    box-sizing:border-box;
+    font-style:italic;
+    font-family:"Arial";
+    
+    margin-left:25px;
+}
+
+button{
+    width:140px;
+    height:35px;
+    border:none;
+    background:#555555;
+    color:white;
+    font-weight:700;
+    font-size:16px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding:0px 30px;
+
+    color:white;
+}
+
+.learn-more{
+    width:230px;
+    height:60px;
+
+    margin-top:20px;
+}
+
+button:hover{
+    background:#498bc9;
+    transition: all .5s;
+}
+
+.btn-sign-up{
+    display:flex;
+    justify-content: center;
+}
+
+.read-more{
+    width:230px;
+    height:60px;
+    font-size:20px;
+    margin-top:30px;
+    padding:0 50px;
+}
+
+main a {
+    color: white; /*#498bc9*/
+    font-weight:normal;
+    text-decoration: none;
+    line-height: inherit;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+footer a{
+    color: white; /*#498bc9*/
+    font-weight:normal;
+    text-decoration: none;
+    line-height: inherit;
+    cursor: pointer;
+    background-color: transparent; 
+}
+
+::placeholder{
+    color:#bbbbbb;
+}
+
+.logo-header{
+    background:url("./assets/logo-header.svg");
+    background-size:cover;
+    width:200px;
+    height:100%;
+}
+
+/*Explanation section*/
+
+.explanation{
+
+    background:#7fd954;
+
+    width:100vw;
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   justify-content:center;
+   box-sizing:border-box; 
+
+   padding:90px 0;
+   text-align:center;
+
+   font-size:24px;
+
+   color:white;
+}
+
+.explanation .title{
+    font-family:"IntroRust-Baseline";
+    font-size:42px;
+}
+
+.explanation .content{
+    width:50%;
+    line-height:1.4em;
+}
+
+/*Hands with dirt image*/
+
+.dirt-image{
+    width:100vw;
+    height:330px;
+    /*background:url('./assets/opus-grows-faqs-question1-image.jpg');*/
+    background:url('https://cdn.shopify.com/s/files/1/1206/8182/t/7/assets/opus-grows-faqs-question1-image.jpeg?v=12405511153923558683');
+    background-size:100vw 100vh;
+    background-position-y: -150px;
+}
+
+/*Updates section*/
+
+.updates{
+    height:400px;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border-bottom:solid 5px #cacaca;
+    background:white;
+}
+
+.update-text{
+    font-size:28px;
+    font-family:"halant";
+    margin-bottom:12px;
+    color:#555555;
+}
+
+.update-title{
+    color:#498bc9;
+    font-size:44px;
+    font-family:"IntroRust-Baseline";
+    margin-top:10px;
+}
+
+.input-form{
+    margin-top:10px;
+    display:flex;
+}
+
+.places-section{
+    width:100%;
+    height:400px;
+    display:flex;
+    justify-content: space-between;
+
+    color:white;
+    font-family:helvetica;
+    font-size:18px;
+    line-height:1.4em;
+}
+
+.places-section div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.places-section .content{
+    width:67%;
+    font-size:18px;
+    text-align: center;
+    margin-top:5px;
+    font-weight:normal;
+}
+
+.home-container{
+    width:50%;
+    height:100%;
+    background:#985fa7;
+}
+
+.places-section .title{
+    font-size:32px;
+    
+}
+
+.wholesale-container{
+    width:50%;
+    height:100%;
+    background:#498bc9;
+}
+
+.wholesale-container .title{
+    font-size:32px;
+}
+
+/*Ingradients section*/
+
+.ingredients-section{
+    height:40%;
+    width:100%;
+    box-sizing:border-box;
+
+    display:flex;
+    justify-content: space-between;
+
+
+    padding-top:60px;
+    padding-left:90px;
+    padding-bottom:45px;
+
+    background:white;
+    color:#555555;
+}
+
+.logo-ingredients{
+    display:flex;
+}
+
+.logo-ingredients img{
+    margin-right:12px;
+}
+
+.ingredients-section .soil-info-title{
+    font-family:"IntroRust-Baseline";
+    margin-top:26px;
+    font-size:26px;
+}
+
+.ingredients-section .label{
+    font-size:24px;
+    font-family:"halant";
+}
+
+.ingredients-section .text-container{
+    width:40%;
+}
+
+.ingredients-section .title{
+    margin-top:12px;
+    font-size:42px;
+    color:#ff9544;
+}
+
+.ingredients-section .content{
+    font-size:16px;
+    line-height:1.3rem;
+}
+
+.image-container {
+    width: 50%;
+    height: 283px;
+    background: url(./assets/ingredient-image.png);
+    background-size: 628px 471px;
+    background-position: -60px 0px;
+}
+
+/*Footer CSS properties*/
+
+footer{
+    width:100vw;
+    height:50vh;
+    box-sizing:border-box;
+    padding: 60px 100px;
+    background-color:#555555;
+    color:black;
+}
+
+.fb-contact{
+    background:url("./assets/icons/twitter-icon.svg");
+    width:20px;
+    height:20px;
+    color:white;
+}
+
+footer .container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+footer .contact{
+    width:20%;
+    height:120px;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    margin-right:100px;
+}
+
+footer .contact a{
+    margin:5px 0;
+    width:120px;
+}
+
+footer .newsletter{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+footer .newsletter p{
+    font-weight:700;
+    font-size:25px;
+}
+
+footer .footer-form{
+    display:flex;
+}
+
+.footer-form button{
+    background:#303b43;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:90px;
+    font-size:15px;
+    font-weight: bold;
+    border-radius:2px;
+}
+
+.networks div{
+    color:white;
+    margin-right: 35px;
+}
+
+.networks{
+    display:flex;
+    flex-direction: row;
+
+}
+
+.networks div:hover{
+    color:black;
+}
+
+.fb-network{
+    background:url('./assets/facebook-icon.svg');
+    width:30px;
+    height:30px;
+}
+
+.tw-network{
+    background:url('./assets/twitter-icon.svg');
+    width:30px;
+    height:30px;
+}
+
+.pin-network{
+    background:url('./assets/pinterest-icon.svg');
+    width:30px;
+    height:30px;
+}
+
+.ins-network{
+    background:url('./assets/instagram-icon.svg');
+    width:30px;
+    height:30px;
+}
+
+.copyright-container{
+    margin-top:48px;
+    display:flex;
+    justify-content: space-between;
+    padding-right:80px;
+    color:white;
+}
+
+
